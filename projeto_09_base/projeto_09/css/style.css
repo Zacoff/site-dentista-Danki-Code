@@ -6,9 +6,11 @@
 }
 /* COLORS */
 :root{
-	--verde: #509d87;
-	--cinza14:rgba(71, 83, 88,0.14);
+	--verde1: #509d87;
+	--verde2: #7dd5b0;
 	--verdeEscuro: #00daaa;
+	--cinza14:rgba(71, 83, 88,0.14);
+	
 }
 /*Classes Auxiliares*/
 .clear{clear: both;}
@@ -62,7 +64,7 @@ header li > a{
 }
 
 li.selected{
-	color:var(--verde);
+	color:var(--verde1);
 	position: relative;
 }
 
@@ -71,7 +73,7 @@ li.selected > span{
 	bottom:0;
 	width: 17px;
 	height: 3px;
-	background: var(--verde);
+	background: var(--verde1);
 }
 
 
@@ -94,7 +96,7 @@ div.telefone-header span{
 	width: 50%;
 }
 .content-header .one h2{
-	color: var(--verde);
+	color: var(--verde1);
 	font-weight: normal;
 	font-size: 37px;
 }
@@ -128,7 +130,7 @@ div.telefone-header span{
 	margin: 10px 0;
 }
 .content-header .one span{
-	color: var(--verde);
+	color: var(--verde1);
 	display: block;
 	margin-top: 20px;
 	font-size: 13px;
@@ -143,6 +145,34 @@ div.telefone-header span{
 	width:50%;
 	border: 15px solid rgba(0,0,0,0);
 }
+/* DIFERENCIAIS */
+section.diferenciais{
+	padding: 40px 0;
+}
+section.diferenciais > .container{
+	display: flex;
+	flex-wrap:wrap;
+}
+.diferencial-single{
+	width: 33.33%;
+	margin-bottom: 20px;
+}
+.diferencial-single img{
+	max-width:100%;
+}
+.diferencial-single h2{
+	font-size: 30px;
+	margin: 35px 0;
+	
+}
+.diferencial-single h2 b{
+	color: var(--verde2);
+}
+.diferencial-single p{
+	color: #2d2d2d;
+	font-size: 14px;
+	width:85%;
+}
 /* RESPONSIVE */
 @media screen and (max-width: 915px) {
 	.content-header .one{width: 100%;text-align: center;}
@@ -150,4 +180,6 @@ div.telefone-header span{
 	.telefone-header{display: none;}
 	nav.desktop{display: none}
 	section.header-master{min-height: 400px;}
+	.diferencial-single{width:100%;text-align: center;}
+	.diferencial-single p{width:100%;}
 }
