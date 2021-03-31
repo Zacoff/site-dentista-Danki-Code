@@ -173,6 +173,33 @@ section.diferenciais > .container{
 	font-size: 14px;
 	width:85%;
 }
+/**/
+.sobre > .container{
+	max-width: 1440px;
+}
+.sobre-container{
+	float: left;
+	width: 50%;
+}
+.sobre-container img{
+	max-width:100%;
+}
+.sobre-container h2{
+	font-size: 33px;
+	margin-bottom: 20px;
+	font-weight: normal;
+	color: #ccc;
+}
+.sobre-container h2:last-of-type{
+	margin: 20px 0;
+}
+.sobre-container h2 b{
+	color: #00daaa;
+}
+.sobre-container p{
+	color: black;
+}
+.padSobre{padding: 10px 50px}
 /* RESPONSIVE */
 @media screen and (max-width: 915px) {
 	.content-header .one{width: 100%;text-align: center;}
@@ -182,4 +209,7 @@ section.diferenciais > .container{
 	section.header-master{min-height: 400px;}
 	.diferencial-single{width:100%;text-align: center;}
 	.diferencial-single p{width:100%;}
+	.sobre-container{width:100%;}
+	.padSobre{padding:0;}
+	.sobre-container h2{margin: 20px 0;}
 }
